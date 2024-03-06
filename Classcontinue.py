@@ -1,17 +1,33 @@
 from Classitem import Item
 
 
+# class Continue(Item):
+
+#     def __init__(self):
+#         pass
+
+#     def _chack_out(self):
+#         out = int(input("ต้องการทำรายการต่อกด 1 หยุดการทำรายการกด 2 : ").strip())
+#         if out == 1:
+#             pass
+#         elif out == 2:
+#             print("จบการทำรายการ")
+#             exit()
+#         else:
+#             print("รหัสไม่ถูกต้อง")
+
+
 class Continue(Item):
 
     def __init__(self):
         pass
 
     def _chack_out(self):
-        out = int(input("ต้องการทำรายการต่อกด 1 หยุดการทำรายการกด 2 : ").strip())
+        out = int(
+            input("\nต้องการทำรายการต่อกด [1] หากไม่ต้องการทำรายการต่อกด [2]: ").strip()
+        )
         if out == 1:
             pass
         elif out == 2:
-            print("จบการทำรายการ")
+            print("\nจบการทำรายการ")
             exit()
-        else:
-            print("รหัสไม่ถูกต้อง")
